@@ -1,1 +1,22 @@
+#start {
+     background-color: lawngreen;
+    font-size: 25px;
+     cursor: pointer;
+    
+}
+
+#reset {
+     background-color: orange;
+    font-size: 25px;
+     cursor: pointer;
+    
+}
+
+#stop {
+     background-color: red;
+    font-size: 25px;
+     cursor: pointer;
+    
+}
+
 
