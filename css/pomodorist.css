@@ -2,6 +2,10 @@ body {
     margin: 20px;
     padding: 0;
     text-align: center;
+    background-color: black;
+    color: white;
+    
+    
 }
 
 main h1 {
@@ -13,73 +17,58 @@ main h1 {
     background-color: lawngreen;
     font-size: 25px;
     cursor: pointer;
+    border-radius: 12px;
+    tab-size: 90px;
+    
+    
+    
 }
 
 #reset {
     background-color: orange;
     font-size: 25px;
     cursor: pointer;
+    border-radius: 12px;
 }
 
 #stop {
     background-color: red;
     font-size: 25px;
     cursor: pointer;
+    border-radius: 12px;
 }
 
 
-
-
-
 #time {
-    /*height: 100px;
-    width: 210px;
-    border: 1px solid black;
-    text-align: center;
-    position: relative;*/
-    border: 1px solid red;
+   border: 1px solid red;
     padding: 20px;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 35px;
     margin: 15px;
 }
 
 main {
-    border: 1px solid green;
+    border: 1px solid black;
     padding: 20px;
 }
 
-.formDiv {
-    display: flex;
-    flex-direction: column;
+#image{
+    
+    height: 350px;
+    height: 350px;
+
 }
 
-.no1 {
-    display: flex;
-    width: 500px;
-    margin: 5px auto;
+footer{
+  border-top: 1px solid gray;
+  color: gray;
+  position: fixed;
+  height: 32px;
+  left: 400px;
+  right: 400px;
+  bottom: 0px;
+  font-size: 14px;
+    
 }
 
-.no1 label {
-    flex: 1;
-}
 
-
-
-.no1 input {
-    flex: 2;
-}
-
-.no2 {
-    display: flex;
-    width: 500px;
-    margin: 5px auto;
-}
-
-.no2 label {
-    flex: 1;
-}
-
-.no2 input {
-    flex: 2;
-}

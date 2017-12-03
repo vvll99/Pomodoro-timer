@@ -13,34 +13,22 @@
 
 <body>
     <main>
-        <h1>Pomodorist</h1>
+        <h1>Pomodoro Timer</h1>
         <div id="time">
         </div>
         <div id="buttons">
-            <button id="start" onclick="start()">Start</button>
-            <button id="stop" onclick="stop()">Stop</button>
-            <button id="reset" onclick="reset()">Reset</button>
+            <button id="start" onclick="start()" style="width: 80px">Start</button>
+            <button id="stop" onclick="stop()" style="width: 80px">Stop</button>
+            <button id="reset" onclick="reset()" style="width: 80px">Reset</button>
         </div>
         <br>
-        <div class="formDiv">
-            <div class="no1">
-                <label for="mainTime">Pomodoro duration: </label>
-                <input type="number" id="mainTime">
-            </div>
-            <div class="no2">
-                <label for="shortBreak">Short break duration: </label>
-                <input type="number" id="shortBreak">
-            </div>
-            <div class="no3">
-                <label for="longBreak">Long break duration: </label>
-                <input type="number" id="longBreak">
-            </div>
-            <div class="no4">
-                <label for="longDelay">Long break delay: </label>
-                <input type="number" id="longDelay">
-            </div>
-        </div>
+        <div id="img">
+        <img src="http://10minuteschool.com/blog/wp-content/uploads/2016/09/pomodoro-time-icon.png" alt="Pomodoro timer" id="image" ></div>
+        
     </main>
+    
+    <footer>&copy; 2017 PZORG. All rights reserved.
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
