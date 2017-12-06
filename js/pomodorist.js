@@ -5,7 +5,8 @@ var seconds = 0;
 
 function countdown() {
 
-
+    seconds--;
+    
     if (seconds < 0) {
         minutes--;
         seconds = 59;
@@ -16,7 +17,7 @@ function countdown() {
     }
 
     document.getElementById("time").innerHTML = pad(minutes) + ':' + pad(seconds);
-    seconds--;
+    
 }
 
 function pad(number)
@@ -35,17 +36,11 @@ var interval;
 function start() {
     clearInterval(interval);
 
-    
     interval = window.setInterval(countdown, 1000);
-
-
-
 }
 
 function stop() {
-
     clearInterval(interval);
-
 }
 
 document.getElementById("time").innerHTML = minutes + ':' + pad(seconds);
