@@ -14,12 +14,18 @@
 <body>
     <main>
         <h1>Pomodoro Timer</h1>
+        <br>
+        <div id="options">
+            <button id="pomodoro" onclick="setPomodoro()" >Pomodoro</button>
+            <button id="short" onclick="setShortBreak()" >Short Break</button>
+            <button id="long" onclick="setLongBreak()" >Long Break</button>
+        </div>
         <div id="time">
         </div>
         <div id="buttons">
-            <button id="start" onclick="start()" style="width: 80px">Start</button>
-            <button id="stop" onclick="stop()" style="width: 80px">Stop</button>
-            <button id="reset" onclick="reset()" style="width: 80px">Reset</button>
+            <button id="start" onclick="start()" >Start</button>
+            <button id="stop" onclick="stop()" >Stop</button>
+            <button id="reset" onclick="reset()" >Reset</button>
         </div>
         <br>
         <div id="img">

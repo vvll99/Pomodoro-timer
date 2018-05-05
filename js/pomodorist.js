@@ -1,7 +1,19 @@
 
 
-var minutes = 25;
+var interval;
+var pomodoroMiutes = 25;
+var shortBreakMinutes = 5;
+var longBreakMinutes = 10;
+var startingMinutes = pomodoroMiutes;
+var minutes = pomodoroMiutes;
 var seconds = 0;
+setTime();
+
+function start() {
+    clearInterval(interval);
+
+    interval = window.setInterval(countdown, 1000);
+}
 
 function countdown() {
 
@@ -11,13 +23,53 @@ function countdown() {
         minutes--;
         seconds = 59;
     }
-    if (minutes < 0) {
-        minutes = 25;
-        seconds = 0;
+    if (minutes == 0 && seconds == 0) {
+        stop();
     }
-
-    document.getElementById("time").innerHTML = pad(minutes) + ':' + pad(seconds);
     
+    setTime();        
+}
+
+function stop() {
+    clearInterval(interval);
+}
+
+function reset() {
+        minutes = startingMinutes;
+        seconds = 0;
+    stop();
+    setTime();    
+}
+
+function setPomodoro() {
+        startingMinutes = pomodoroMiutes;
+        minutes = startingMinutes;
+        seconds = 0;
+    stop();
+    setTime();   
+    start();
+}
+
+function setShortBreak() {
+        startingMinutes = shortBreakMinutes;
+        minutes = startingMinutes;
+        seconds = 0;
+    stop();
+    setTime(); 
+    start();
+}
+
+function setLongBreak() {
+        startingMinutes = longBreakMinutes;
+        minutes = startingMinutes;
+        seconds = 0;
+    stop();
+    setTime();    
+    start();
+}
+
+function setTime() {
+  document.getElementById("time").innerHTML = minutes + ':' + pad(seconds); 
 }
 
 function pad(number)
@@ -31,26 +83,8 @@ function pad(number)
     }
 }
 
-var interval;
-
-function start() {
-    clearInterval(interval);
-
-    interval = window.setInterval(countdown, 1000);
-}
-
-function stop() {
-    clearInterval(interval);
-}
-
-document.getElementById("time").innerHTML = minutes + ':' + pad(seconds);
 
 
-function reset() {
-        minutes = 25;
-        seconds = 0;
-    stop();
-    document.getElementById("time").innerHTML = minutes + ':' + pad(seconds);
-    
-}
+
+
 

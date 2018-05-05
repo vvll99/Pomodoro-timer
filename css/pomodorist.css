@@ -13,14 +13,43 @@ main h1 {
     padding: 0;
 }
 
+#pomodoro {
+    background-color: indianred;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 12px;
+    tab-size: 90px;    
+    color: white;
+    width: 160px;
+    
+}
+
+#short {
+    background-color: indianred;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 12px;
+    color: white;
+    width: 160px;
+}
+
+#long {
+    background-color: indianred;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 12px;
+    color: white;
+    width: 160px;
+}
+
+
 #start {
     background-color: lawngreen;
     font-size: 25px;
     cursor: pointer;
     border-radius: 12px;
-    tab-size: 90px;
-    
-    
+    tab-size: 90px;   
+    width: 80px;
     
 }
 
@@ -29,6 +58,7 @@ main h1 {
     font-size: 25px;
     cursor: pointer;
     border-radius: 12px;
+    width: 80px;
 }
 
 #stop {
@@ -36,8 +66,8 @@ main h1 {
     font-size: 25px;
     cursor: pointer;
     border-radius: 12px;
+    width: 80px;
 }
-
 
 #time {
    border: 1px solid red;
